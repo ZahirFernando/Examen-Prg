@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
+        <body>
         <title>
             Habitaciones - Hotel Esmeralda
         </title>
@@ -62,8 +62,8 @@
             Precio: $900 mx por noche
         </h4>
 
-        <h3>
-            Reserva Ahora
+        <h3>Reserva Ahora
+
         </h3>
 
         <br>
@@ -72,11 +72,15 @@
             Nombre:
         </p>    
 
+        <input type="text" name="nombre" placeholder="Ingrese su Nombre">
+
         <br>
 
          <p>
             Correo Electronico:
         </p>
+
+       <input type="email" name="correo" placeholder="Ingrese su Correo Electronico" size="30">
 
         <br>
 
@@ -86,14 +90,33 @@
 
         <br>
 
-         <p>
+         <input type="date" name="checkin" required>
+
+        <br><br>
+
+        <p>
             Check-out:
         </p>
 
+        <input type="date" name="checkout" required>
+
+        <br><br>
+
+        <p>
+            Número de Personas:
+        </p>
+
+        <input type="number" name="personas" min="1" max="10" value="1" required>
+
+        <br><br>  
+   
+        <p>
+            Número de Personas:
+            
         <br>
 
-         <p>
-            Numero de Personas:
+        <input type="number" name="personas" min="1" max="10" value="1" required>
+
         </p>
 
         <br>
@@ -102,11 +125,14 @@
 
         <br>
 
+        <br>
+
          <li> <a href="rooms.html">
             Volver a Habitaciones
         </a> </li>
 
-       
 
-    </body>
+
+        </body>
+    </head>
 </html> 

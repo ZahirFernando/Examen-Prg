@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
+        <body>
         <title>
             Habitaciones - Hotel Esmeralda
         </title>
@@ -40,32 +40,30 @@
 
         <br>
 
-       <img src="../Examen/Assets/Habitacion-deluxe.jpg" alt="Habitacion Deluxe" width="400" height="300">
+        <img src="../Examen/Assets/Habitacion-deluxe.jpg" alt="Habitacion Estandar" width="400" height="300">
+
         <p>
-           La Habitacion cuenta con un perfil para disfrutar de la manera mas comoda y con un toque distinto a los demas cuartos, con todas las comodidades necesarias para una estancia placentera y un toque de lujo
+           La Habitacion cuenta con un perfil estandar, con todas las comodidades necesarias para una estancia placentera
         </p>
 
         <ul>
         	<li>Equipado con una cama doble</li>
             <li>Escritorio de trabajo</li>
-            <li>Refrigerador personal</li>
             <li>Armario espacioso</li>
-            <li>Baño privado con ducha y tina</li>
+            <li>Baño privado con ducha</li>
+            <li>TV de pantalla plana con canales por cable</li>
             <li>Servicio de Habitaciones 24/7</li>
             <li>Wi-Fi</li>
-            <li>TV de pantalla plana con canales por cable</li>
-            <li>Acceso gratis a desayuno en comedor</li>
-            <li>Articulos de tocador de lujo</li>
         </ul>
 
         <br>
 
         <h4>
-            Precio: $1500 mx por noche
+            Precio: $900 mx por noche
         </h4>
 
-        <h3>
-            Reserva Ahora
+        <h3>Reserva Ahora
+
         </h3>
 
         <br>
@@ -74,11 +72,15 @@
             Nombre:
         </p>    
 
+        <input type="text" name="nombre" placeholder="Ingrese su Nombre">
+
         <br>
 
          <p>
             Correo Electronico:
         </p>
+
+       <input type="email" name="correo" placeholder="Ingrese su Correo Electronico" size="30">
 
         <br>
 
@@ -88,14 +90,33 @@
 
         <br>
 
-         <p>
+         <input type="date" name="checkin" required>
+
+        <br><br>
+
+        <p>
             Check-out:
         </p>
 
+        <input type="date" name="checkout" required>
+
+        <br><br>
+
+        <p>
+            Número de Personas:
+        </p>
+
+        <input type="number" name="personas" min="1" max="10" value="1" required>
+
+        <br><br>  
+   
+        <p>
+            Número de Personas:
+            
         <br>
 
-         <p>
-            Numero de Personas:
+        <input type="number" name="personas" min="1" max="10" value="1" required>
+
         </p>
 
         <br>
@@ -103,12 +124,15 @@
         <button type="submit">Reservar Ahora</button>
 
         <br>
-        
+
+        <br>
+
          <li> <a href="rooms.html">
             Volver a Habitaciones
         </a> </li>
 
-       
 
-    </body>
+
+        </body>
+    </head>
 </html> 
